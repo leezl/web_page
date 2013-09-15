@@ -1,14 +1,16 @@
 require 'spec_helper'
 
 describe "StaticPages" do
+
+  let(:base_title) { "Liesl Wigand: Computer Scientist, Graduate Student" }
+
   describe "Home Page" do
     it "should have the content 'Liesl Wigand'" do
     	visit '/static_pages/home'
     	expect(page).to have_content('Liesl Wigand')
     end
-    it "should have the title 'Liesl Wigand: Computer Scientist, Graduate Student | Home'" do
+    it "should have the title ' Home'" do
       visit '/static_pages/home'
-      expect(page).to have_title('Liesl Wigand: Computer Scientist, Graduate Student | Home')
     end
     it "should have a footer containing 'Hosted by:'" do
       visit '/static_pages/home'
@@ -27,7 +29,7 @@ describe "StaticPages" do
   	end
     it "should have the title 'Liesl Wigand: Computer Scientist, Graduate Student | About'" do
       visit '/static_pages/help'
-      expect(page).to have_title('Liesl Wigand: Computer Scientist, Graduate Student | About')
+      expect(page).to have_title("#{base_title} | About")
     end
     it "should have a footer containing 'Hosted by:'" do
       visit '/static_pages/help'
@@ -46,7 +48,7 @@ describe "StaticPages" do
     end
     it "should have the title 'Liesl Wigand: Computer Scientist, Graduate Student | Fun'" do
       visit '/static_pages/fun'
-      expect(page).to have_title('Liesl Wigand: Computer Scientist, Graduate Student | Fun')
+      expect(page).to have_title("#{base_title} | Fun")
     end
     it "should have a footer containing 'Hosted by:'" do
       visit '/static_pages/fun'

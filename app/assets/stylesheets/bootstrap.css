@@ -58,7 +58,7 @@ hgroup,
 nav,
 section {
   display: block;
-  background: #283142 url("../../images/asfalt283142.png") repeat;
+  background: #283142 url("../../assets/images/asfalt283142.png") repeat;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
@@ -66,11 +66,11 @@ section {
 }
 
 #content {
-    background: #283142 url("../../images/wave617c58.png") repeat;
+    background: #283142 url("../../assets/images/wave617c58.png") repeat;
 }
 
 #contentGallery {
-    background: #283142 url("../../images/wave617c58.png") repeat;
+    background: #283142 url("../../assets/images/wave617c58.png") repeat;
     height: 880px;
 }
 
@@ -79,7 +79,7 @@ section {
 }
 
 #textcontent {
-    background: #283142 url("../../images/asfalt283142.png") repeat;
+    background: #283142 url("../../assets/images/asfalt283142.png") repeat;
     -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
@@ -266,7 +266,7 @@ body {
   line-height: 20px;
   color: #617C58;
   background-color: #3E3535;
-  background: #3E3535 url("../../images/escheresque_ste.png") repeat;
+  background: #3E3535 url("../../assets/images/escheresque_ste.png") repeat;
 }
 
 a {
@@ -4022,7 +4022,7 @@ input[type="submit"].btn.btn-mini {
      -moz-border-radius: 4px;
           border-radius: 4px;
   margin: 5px;
-  background: #283142 url("../../images/asfalt283142.png") repeat;
+  background: #283142 url("../../assets/images/asfalt283142.png") repeat;
 }
 
 .nav-list > li > a,
