@@ -1,33 +1,42 @@
 <% provide(:title, 'About') %>
 <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <ul class="nav">
+			<li><a href="home">Home</a></li>
+			<li class="active"><a href="help">About</a></li>
+			<li><a href="exproj">Projects</a></li>
+			<li><a href="resumepg">Resume</a></li>
+		    <li><a href="fun"><i>Fun</i></a></li>
+	    </ul>
+      </div>
+    </div>
+
 	<section id="intro">
-		<header>
-			<h2>About</h2>
-		</header>
-		<p> This website is hosted by the University of Nevada, Reno, Computer Science and Engineering department. It was created using HTML5 templates, and Images from various artists who are listed below: Contact me if you want something taken down: wigandlm@gmail.com </p>
-		<!--<img src="images/introimage.png" alt="lime" />-->
+		<div class="container-fluid">
+			<div class="span12">
+				<header>
+					<h2>About</h2>
+				</header>
+				<p> This website is hosted by the University of Nevada, Reno, Computer Science and Engineering department. It was created using HTML5 templates, and Images from various artists who are listed below: Contact me if you want something taken down: wigandlm@gmail.com </p>
+			</div>
+		</div>
 	</section>
 	
-	<section id="content">
-				<ul class="column">
-				    <!--eqblock-->
-				    <li>
-				        <section class="block">
-									<a href="#"><img src="images/2-thumb.jpg" alt=""  /></a> 
-										<h2>Artists</h2> 
-										<p> I used a lot of very nice images found on deviantart, and I am listing them in the <a href="gallery">gallery</a>. </p> 
-				        </section>
-				    </li>
+	<div class="container-fluid" id="content">
+		<!--eqblock-->
+		<div class="span4 backed">
+			<div class="pagination-centered"><a href="#"><img src="images/2-thumb.jpg" alt=""  /></a></div>
+			<h3>Artists</h3> 
+			<p> I used a lot of very nice images found on deviantart, and I am listing them in the <a href="gallery">gallery</a>. </p> 
+		</div>
 
-				    <!--eqblock-->
-				    <li>
-				        <section class="block">
-									<a href="#"><img src="images/1-thumb.jpg" alt=""  /></a> 
-										<h2>Bootstrap</h2> 
-										<p> <a href="http://twitter.github.com/bootstrap/">Bootstrap</a> is a nice framework that provides useful classes for formating HTML pages like this one. </p> 
-				        </section>
-				    </li>
-				</ul>
-		</section>
-<!-- Free template created by http://freehtml5templates.com -->
+		<!--eqblock-->
+		<div class="span4 backed">
+			<div class="pagination-centered"><a href="#"><img src="images/1-thumb.jpg" alt=""  /></a></div>
+			<h3>Bootstrap</h3> 
+			<p> <a href="http://twitter.github.com/bootstrap/">Bootstrap</a> is a nice framework that provides useful classes for formating HTML pages like this one. </p> 
+		</div>
+	</div>
 </body>

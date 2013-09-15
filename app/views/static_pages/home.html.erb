@@ -1,53 +1,60 @@
 <% provide(:title, 'Home') %>
 <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <ul class="nav">
+			<li class="active"><a href="home">Home</a></li>
+			<li><a href="help">About</a></li>
+			<li><a href="exproj">Projects</a></li>
+			<li><a href="resumepg">Resume</a></li>
+		    <li><a href="fun"><i>Fun</i></a></li>
+	    </ul>
+      </div>
+    </div>
 
 	<section id="intro">
-		<header>
-			<h2>This Homepage is a work in progress. Always.</h2>
-		</header>
-		<p> This is a Hollowed out homepage. </p>
-		<img src="images/introimage.png" alt="lime" />
+		<div class="container-fluid">
+			<div class="span9">
+	        <header>
+			    <h2>This Homepage is a work in progress. Always.</h2>
+		    </header>
+		    <p> Hello! I'm a graduate student in computer science and engineering, working <a href="http://www.cse.unr.edu/~monica/">Monica Nicolescu's</a> robotics lab. Please excuse the hideous colors, I'm working on it. </p>
+		    </div>
+		    <div class="span3 pagination-centered">
+		    <a href="https://plus.google.com/u/0/112870758599564022011/posts" ><img class="bordered" src="images/ClipFace12.png" alt="me" width=185 height=185 /></a>
+		    </div>
+	    </div>
 	</section>
-	
-	<section id="content">
-				<ul class="column">
-				    <!--eqblock-->
-				    <li>
-				        <section class="block">
-									<a href="#"><img src="images/1-thumb.jpg" alt=""  /></a> 
-										<h2><a href="#">Exciting Projects</a></h2> 
-										<p> Descriptions of several projects I have worked on in the past. </p> 
-				        </section>
-				    </li>
 
-				    <!--eqblock-->
-				    <li>
-				        <section class="block">
-									<a href="#"><img src="images/2-thumb.jpg" alt=""  /></a> 
-										<h2><a href="#"> Section2 </a></h2> 
-										<p> description </p> 
-				        </section>
-				    </li>
+	<div class="container-fluid" id="content">
+		<!--eqblock-->
+		<div class="span3 backed">
+			<div class="pagination-centered"><a href="#"><img class="bordered" src="images/2-thumb.jpg" alt=""  /></a></div>
+			<h3><a href="about.html"> About This Site </a></h3> 
+			<p> Webpage talk, hosting, full credits, and general information. </p>
+		</div>
 
-				    <!--eqblock-->
-				    <li>
-				        <section class="block">
-									<a href="#"><img src="images/6-thumb.jpg" alt=""  /></a> 
-										<h2><a href="#">Resume</a></h2> 
-										<p> The short of it. </p> 
-				        </section>
-				    </li>
+		<!--eqblock-->
+		<div class="span3 backed">
+			<div class="pagination-centered"><a href="#"><img class="bordered" src="images/1-thumb.jpg" alt=""  /></a></div>
+			<h3><a href="exproj.html">Exciting Projects</a></h3> 
+			<p> Descriptions of several projects I have worked on in the past for school and work. </p> 
+		</div>
 
-				    <!--eqblock-->
-				    <li>
-				        <section class="block">
-									<a href="#"><img src="images/3-thumb.jpg" alt=""  /></a> 
-										<h2><a href="#"> Random Fun Stuff </a></h2> 
-										<p> Comics, Games, Books. </p> 
-				        </section>
-				    </li>
-				</ul>
-		</section>
+		<!--eqblock-->
+		<div class="span3 backed">
+	    	<div class="pagination-centered"><a href="#"><img class="bordered" src="images/6-thumb.jpg" alt=""  /></a></div>
+			<h3><a href="resumepg.html">Resum&eacute;</a></h3> 
+			<p> My own personal advertisement as well as soem links to webpages for projects I have shared in. </p> 
+		</div>
+
+		<!--eqblock-->
+		<div class="span3 backed">
+			<div class="pagination-centered"><a href="#"><img class="bordered" src="images/3-thumb.jpg" alt=""  /></a></div>
+			<h3><a href="fun.html"> Random Fun Stuff </a></h3> 
+			<p> Comics, Games, and Books that I have either greatly enjoyed or hated. </p>
+		</div>
+	</div>
 
 <!-- Free template created by http://freehtml5templates.com -->
 </body>

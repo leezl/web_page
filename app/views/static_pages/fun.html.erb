@@ -1,61 +1,51 @@
 <% provide(:title, 'Fun') %>
 <body>
-	<section id="intro">
-		<header>
-			<h2>FUN STUFF</h2>
-		</header>
-		<p> The content of this section does not necessarily have any relation to my career or education. </p>
-		<!--<img src="images/introimage.png" alt="lime" />-->
-	</section>
-	<!--<div class="row">
-      <div class="span9">
-      	<img src="images/introimage.png" alt="lime" />
-        <div class="row">
-          <div class="span6">The content of this section does not necessarily have any relation to my career or education.</div>
-          <div class="span3">Extra</div>
-        </div>
+
+	<div class="navbar">
+      <div class="navbar-inner">
+        <ul class="nav">
+			<li><a href="home">Home</a></li>
+			<li><a href="help">About</a></li>
+			<li><a href="exproj">Projects</a></li>
+			<li><a href="resumepg">Resume</a></li>
+		    <li class="active"><a href="fun"><i>Fun</i></a></li>
+	    </ul>
       </div>
-    </div>-->
+    </div>
+
+	<section id="intro">
+		<div class="container-fluid">
+			<div class="span9">
+				<h2>FUN STUFF</h2>
+				<p class="lead"> The content of this section does not necessarily have any relation to my career or education. </p>
+			</div>
+		</div>
+	</section>
 	
-	<section id="content">
-				<ul class="column">
-				    <!--eqblock-->
-				    <li>
-				        <section class="block">
-									<a href="#"><img src="images/1-thumb.jpg" alt=""  /></a> 
-										<h2><a href="subFunBooks.html">Reading</a></h2> 
-										<p> This Section is dedicated to ranting about my books. </p> 
-				        </section>
-				    </li>
+	<div class="container-fluid" id="content">
+		<!--eqblock-->
+		<div class="span3 backed">
+			<div class="pagination-centered"><a href="#"><img src="images/1-thumb.jpg" alt=""  /></a></div>
+			<h2><a href="subFunBooks">Reading</a></h2> 
+			<p> This Section is dedicated to ranting about my books. </p> 
+		</div>
 
-				    <!--eqblock-->
-				    <li>
-				        <section class="block">
-									<a href="#"><img src="images/2-thumb.jpg" alt=""  /></a> 
-										<h2><a href="subFunGames.html"> Video Games </a></h2> 
-										<p> Similar to my books section except for a different media. </p> 
-				        </section>
-				    </li>
+		<div class="span3 backed">
+			<div class="pagination-centered"><a href="#"><img src="images/2-thumb.jpg" alt=""  /></a></div>
+			<h2><a href="subFunGames"> Video Games </a></h2> 
+			<p> Similar to my books section except for a different media. </p> 
+		</div>
 
-				    <!--eqblock-->
-				    <li>
-				        <section class="block">
-									<a href="#"><img src="images/6-thumb.jpg" alt=""  /></a> 
-										<h2><a href="subFunComics.html">Comics</a></h2> 
-										<p> This is simply a collection of nice webcomics. </p> 
-				        </section>
-				    </li>
+		<div class="span3 backed">
+			<div class="pagination-centered"><a href="#"><img src="images/6-thumb.jpg" alt=""  /></a></div>
+			<h2><a href="subFunComics">Comics</a></h2> 
+			<p> This is simply a collection of nice webcomics. </p> 
+		</div>
 
-				    <!--eqblock-->
-				    <li>
-				        <section class="block">
-									<a href="#"><img src="images/3-thumb.jpg" alt=""  /></a> 
-										<h2><a href="subFunEtc.html"> Etc </a></h2> 
-										<p> For anything that doesn't fit anywhere else. </p> 
-				        </section>
-				    </li>
-				</ul>
-		</section>
-
-<!-- Free template created by http://freehtml5templates.com -->
+		<div class="span3 backed">
+			<div class="pagination-centered"><a href="#"><img src="images/3-thumb.jpg" alt=""  /></a></div>
+			<h2><a href="subFunEtc"> Etc </a></h2> 
+			<p> For anything that doesn't fit anywhere else. </p> 
+		</div>
+	</div>
 </body>
