@@ -58,7 +58,7 @@ hgroup,
 nav,
 section {
   display: block;
-  background: #283142 url("../../assets/images/asfalt283142.png") repeat;
+  background: #283142 url("../../assets/images/asfalt283142Light.png") repeat;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
@@ -79,7 +79,7 @@ section {
 }
 
 #textcontent {
-    background: #283142 url("../../assets/images/asfalt283142.png") repeat;
+    background: #283142 url("../../assets/images/asfalt283142Light.png") repeat;
     -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
