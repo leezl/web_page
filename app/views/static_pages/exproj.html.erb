@@ -6,7 +6,7 @@
         <ul class="nav">
 			<li> <%= link_to "Home", static_pages_home_path %> </li>
 			<li> <%= link_to "About", static_pages_help_path %> </li>
-			<li class="active"> <a href="#"> Projects </li>
+			<li class="active"> <a href="#"> Projects </a> </li>
 			<li> <a href="resumepg">Resume</a> </li>
 		    <li> <%= link_to "Fun", static_pages_fun_path %> </li>
 	    </ul>
@@ -23,5 +23,23 @@
 			</div>
 		</div>
 	</section>
+
+	<div class="container-fluid" id="content">
+		<div class="row-fluid" id="textcontent">
+            <a href="images/1-thumb.jpg"><img id="textcontent" style="float:left" src="images/1-thumb.jpg"/></a>
+            <h3>Attribute Recognition</h3>
+            <p> This is an on going project where I am attempting to use images (and video) and related sentences to quickly predict attributes present in regions of an image. So basically not just object recognition but also adjective predictions like round, shiny, or even large. I am currently using OpenNI with a Primesense (Kinect like RGBD) camera, as well as convolutional neural networks implemented on the GPU to attempt this. So far I have a simple version that uses SVMs which shows an ability to predict some colors, positions, and general shapes (round), and the current network version which is only trained to recognize objects until I can rewrite a portion of it to work with multilabel prediction, ie it can predict that and object is "red, yellow or blue," but not "red, yellow and blue."</p>
+        </div>
+        <div class="row-fluid" id="textcontent">
+            <a href="images/2-thumb.jpg"><img id="textcontent" style="float:left" src="images/2-thumb.jpg"/></a>
+            <h3>DTW on Google N-Grams</h3>
+            <p> This was a really fun project whihc I did not continue since it had little to do with my work, but I continue to hold out hope that I can return to it. The idea was to find interesting patterns in Google N-Grams. SO I downloaded a copy, and began working wiht it in Scala, which I was trying to learn at the time. I used Dynamic Time Warping given a word, to find words that peaked in usage at the same time. So for example if you ask <a href="https://books.google.com/ngrams/graph?content=end%2Cwar%2Cgun&year_start=1900&year_end=1980&corpus=15&smoothing=3&share=&direct_url=t1%3B%2Cend%3B%2Cc0%3B.t1%3B%2Cwar%3B%2Cc0%3B.t1%3B%2Cgun%3B%2Cc0">Google N-Grams</a> to display "war","gun","end" at the same time, they all spike in usage during wars. I had this working, but only on a very narrow subset: I had no experience with databases, and no idea how to quickly access the data, so as a proof of concept I had taken a 100 words, some of which were obviously related and others which were not and tried a few searches on them. I had further plans, but have not reurned to it.</p>
+        </div>
+        <div class="row-fluid" id="textcontent">
+            <a href="images/3-thumb.jpg"><img id="textcontent" style="float:left" src="images/3-thumb.jpg"/></a>
+            <h3>OpenGL Labyrinth</h3>
+            <p> I took a graphics class, and the final group projects were air hockey and labyrinth. both are available on my <a href="https://github.com/leezl/cse680">GitHub</a> account under the project cse680. They are rather difficult to build, since they rely on several difficult libraries, but they are fun to look at. I would say they are fun to play, but I never got the physics working quite fast enough for my classmates. They all got bored of waiting for gravity to catch up with them.</p>
+        </div>
+	</div>
 	
 </body>
