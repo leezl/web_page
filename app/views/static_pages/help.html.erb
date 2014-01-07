@@ -4,11 +4,11 @@
     <div class="navbar">
       <div class="navbar-inner">
         <ul class="nav">
-			<li><a href="home">Home</a></li>
-			<li class="active"><a href="#">About</a></li>
-			<li><a href="exproj">Projects</a></li>
-			<li><a href="resumepg">Resume</a></li>
-		    <li><a href="fun"><i>Fun</i></a></li>
+			<li> <%= link_to "Home", static_pages_home_path %> </li>
+			<li class="active"> <a href="#">About</a> </li>
+			<li> <%= link_to "Projects", static_pages_exproj_path %> </li>
+			<li> <a href="resumepg">Resume</a> </li>
+		    <li> <%= link_to "Fun", static_pages_fun_path %> </li>
 	    </ul>
       </div>
     </div>

@@ -3,19 +3,21 @@
     <div class="navbar">
       <div class="navbar-inner">
         <ul class="nav">
-			<li><a href="index">Home</a></li>
-			<li><a href="about">About</a></li>
-			<li><a href="exproj">Projects</a></li>
-			<li><a href="resumepg">Resume</a></li>
-		    <li class="active"><a href="fun"><i>Fun</i></a></li>
-	    </ul>
+          <li> <%= link_to "Home", static_pages_home_path %> </li>
+          <li> <%= link_to "About", static_pages_help_path %> </li>
+          <li> <%= link_to "Projects", static_pages_exproj_path %> </li>
+          <li> <a href="resumepg">Resume</a> </li>
+          <li class="active"> <%= link_to "Fun", static_pages_fun_path %> </li>
+        </ul>
       </div>
     </div>
 	<section id="intro">
 		<header>
 			<h2><strong>Fun:</strong> Comics</h2>
 		</header>
-		<p> Here's a couple good webcomics, which hopefully are updating correctly. </p>
+		<p> Here's a couple good webcomics, which hopefully are updating correctly. I'm using the rss feeds and parsing them with feedzirra, and some regex stuff to grab the exact img I need. For practice! The bottom one is from an rss feed that provides thumbnails rather than full size comics.</p>
+
+    <a href="http://verboselogging.com/2009/05/24/rss-fun-with-feedzirra">The RSS Blog Post I started with</a>
 	</section>
 	
 	<section id="content">
@@ -32,13 +34,16 @@
                 </div>
                 <div class="span10">
                     <div class="row-fluid" id="textcontent">
-                    <a href="http://xkcd.com/1183/"><img src="http://imgs.xkcd.com/comics/rose_petals.png" class="img-polaroid" id="imagecontent"><br><p>xkcd</p></a>
+                      <a href="http://xkcd.com/1183/"><img src= <%= get_comic("http://xkcd.com/rss.xml") %> class="img-polaroid" id="imagecontent"><br><p>xkcd</p></a>
+                    <!--<a href="http://xkcd.com/1183/"><img src="http://imgs.xkcd.com/comics/rose_petals.png" class="img-polaroid" id="imagecontent"><br><p>xkcd</p></a>-->
                     </div>
                     <div class="row-fluid" id="textcontent">
-                    <a href="http://www.phdcomics.com/comics.php"><img src="http://www.phdcomics.com/comics/archive/phd030613s.gif" class="img-polaroid" id="imagecontent"><br><p>PhD</p></a>
+                      <a href="http://www.phdcomics.com/comics.php"> <img src= <%= get_comic("http://www.phdcomics.com/gradfeed.php") %> class="img-polaroid" id="imagecontent"><br><p>PhD</p></a>
+                    <!-- <a href="http://www.phdcomics.com/comics.php"><img src="http://www.phdcomics.com/comics/archive/phd030613s.gif" class="img-polaroid" id="imagecontent"><br><p>PhD</p></a> -->
                     </div>
                     <div class="row-fluid" id="textcontent">
-                    <a href="http://www.twogag.com/archives/2724"><img src="http://www.twogag.com/comics/2013-03-08-TGAG_269_Psycho.jpg" class="img-polaroid" id="imagecontent"><br><p>Two Guys and Guy</p></a>
+                      <a href="http://www.twogag.com/"><img src= <%= get_comic("http://feeds.feedburner.com/TwoGuysAndGuy") %> class="img-polaroid" id="imagecontent"><br><p>Two Guys and Guy</p></a>
+                    <!--<a href="http://www.twogag.com/archives/2724"><img src="http://www.twogag.com/comics/2013-03-08-TGAG_269_Psycho.jpg" class="img-polaroid" id="imagecontent"><br><p>Two Guys and Guy</p></a>-->
                     </div>
                 </div>
             </div>

@@ -1,7 +1,9 @@
 WebPage::Application.routes.draw do
   get "static_pages/home"
   get "static_pages/help"
+  get "static_pages/gallery"
   get "static_pages/fun"
+  get "static_pages/exproj"
   get "static_pages/subFunComics"
   get "static_pages/subFunBooks"
   get "static_pages/subFunGames"

@@ -5,6 +5,12 @@ class StaticPagesController < ApplicationController
   def help
   end
 
+  def gallery
+  end
+
+  def exproj
+  end
+
   def fun
   end
 

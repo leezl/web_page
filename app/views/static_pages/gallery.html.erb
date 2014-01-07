@@ -1,0 +1,76 @@
+<% provide(:title, 'Gallery') %>
+<body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <ul class="nav">
+			<li> <%= link_to "Home", static_pages_home_path %> </li>
+			<li class="active" > <%= link_to "About", static_pages_help_path %> </li>
+			<li> <%= link_to "Projects", static_pages_exproj_path %> </li>
+			<li> <a href="resumepg">Resume</a> </li>
+		    <li> <%= link_to "Fun", static_pages_fun_path %> </li>
+	    </ul>
+      </div>
+    </div>
+
+    <section id="intro">
+		<div class="container-fluid">
+			<div class="span12">
+				<header>
+					<h2><strong>About:</strong> Gallery</h2>
+				</header>
+				<p> This contains a few screenshots of projects, as well as some test images I'm using to debug. </p>
+			</div>
+		</div>
+	</section>
+	
+	<section id="contentGallery">
+	    <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span2">
+                    <ul class="nav nav-list">
+                      <li class="nav-header"> <%= link_to "About", static_pages_help_path %> </li>
+                      <li><a href="#"><i class="icon-facetime-video"></i> Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="span8">
+                <!--  Carousel - consult the Twitter Bootstrap docs at
+                          http://twitter.github.com/bootstrap/javascript.html#carousel -->
+                    <div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
+                      <div class="carousel-inner">
+                        <div class="item active"><!-- class of active since it's the first item -->
+                          <img src="http://fc00.deviantart.net/fs71/i/2010/028/c/7/It__s_my_flower_by_thompson46.jpg" alt="" />
+                          <div class="carousel-caption">
+                            <p>"It's my flower," by <a href="http://thomaswievegg.deviantart.com/">*thomaswievegg</a></p>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img src="http://fc06.deviantart.net/fs23/i/2009/251/1/3/GOLEM___toys_and_magic_by_randis.jpg" alt="" />
+                          <div class="carousel-caption">
+                            <p>GOLEM-toys and magic, by <a href="http://randis.deviantart.com/">~randis</a></p>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img src="images/selection.jpg" alt="" />
+                          <div class="carousel-caption">
+                            <p>This was a screenshot of one of our first python ogre projects. We finally got mouse selection working and were thrilled. The sky and the water don't match because python ogre use the trick of pre-generated water for each default sky, and we had swapped water but not sky files.</p>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <img src="images/Peaks.jpg" alt="" />
+                          <div class="carousel-caption">
+                            <p>This was a graph of the Google N-Gram data for 'war' after smoothing and with the peaks marked. The program automatically detected peaks, and found words which peaked at similar times, but I do not have any of the completed graphs, only the "in progress" ones. I'll have to look for those on the other machine.</p>
+                          </div>
+                        </div>
+                      </div><!-- /.carousel-inner -->
+                      <!--  Next and Previous controls below
+                            href values must reference the id for this carousel -->
+                        <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
+                        <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+                    </div><!-- /.carousel -->
+                </div>
+            </div>
+        </div>
+	</section>
+
+</body>

@@ -3,10 +3,10 @@
     <div class="navbar">
       <div class="navbar-inner">
         <ul class="nav">
-			<li class="active"><a href="home">Home</a></li>
-			<li><a href="help">About</a></li>
-			<li><a href="exproj">Projects</a></li>
-			<li><a href="resumepg">Resume</a></li>
+			<li class="active"> <%= link_to "Home", static_pages_home_path %> </li>
+			<li> <%= link_to "About", static_pages_help_path %> </li>
+			<li> <%= link_to "Projects", static_pages_exproj_path %> </li>
+			<li> <a href="resumepg">Resume</a> </li>
 		    <!--<li><a href=  >Fun</a></li> -->
 		    <li> <%= link_to "Fun", static_pages_fun_path %> </li>
 	    </ul>
