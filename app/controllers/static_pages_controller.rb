@@ -7,4 +7,13 @@ class StaticPagesController < ApplicationController
 
   def fun
   end
+
+  def subFunGames
+  end
+
+  def subFunBooks
+  end
+
+  def subFunComics
+  end
 end
