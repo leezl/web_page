@@ -8,6 +8,8 @@ gem 'pg'
 gem 'feedzirra'
 # pdf-reader for, you guessed it.
 gem 'pdf-reader'
+#add bootstrap, and begin merging our old format with it
+gem 'bootstrap-sass'
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do

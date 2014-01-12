@@ -3410,7 +3410,7 @@ input[type="button"].btn-block {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#777), to(#89a480));
   background-image: -webkit-linear-gradient(top, #777, #89a480);
   background-image: -o-linear-gradient(top, #777, #89a480);
-  background-image: linear-gradient(to bottom, #777, #89a480); #looking here
+  background-image: linear-gradient(to bottom, #777, #89a480);
   background-repeat: repeat-x;
   border-color: #89a480 #89a480 #002a80;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
