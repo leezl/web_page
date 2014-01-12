@@ -11,6 +11,12 @@ class StaticPagesController < ApplicationController
   def exproj
   end
 
+  def blogger
+  end
+
+  def resume
+  end
+
   def fun
   end
 

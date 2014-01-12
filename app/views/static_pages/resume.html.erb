@@ -1,0 +1,65 @@
+<% provide(:title, 'Resume') %>
+<body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <ul class="nav">
+			<li> <%= link_to "Home", static_pages_home_path %> </li>
+			<li> <%= link_to "About", static_pages_help_path %> </li>
+			<li> <%= link_to "Projects", static_pages_exproj_path %> </li>
+			<li class="active"> <a href="#">Resume</a> </li>
+		    <li> <%= link_to "Fun", static_pages_fun_path %> </li>
+	    </ul>
+      </div>
+    </div>
+
+	<section id="intro">
+		<div class="container-fluid">
+			<div class="span12">
+				<header>
+					<h2>Resume, Publications, etc</h2>
+				</header>
+				<p>  This section is still making the transition from my previous site to this rails based version. I am going to try to use pdf-viewer for a few files here. </p>
+			</div>
+		</div>
+	</section>
+
+	<div class="container-fluid" id="content">
+		<div class="row-fluid" id="textcontent">
+            <a href="images/1-thumb.jpg"><img id="textcontent" style="float:left" src="images/1-thumb.jpg"/></a>
+            <h3>R&eacutesum&eacute</h3>
+            <p> My current resume. Not much there yet really, and I just noticed that it was missing a symbol in the website link. How will anyone ever get to this page? </p>
+            <a href="/resume.pdf">pdf</a>
+        </div>
+        <div class="row-fluid" id="textcontent">
+            <a href="images/2-thumb.jpg"><img id="textcontent" style="float:left" src="images/2-thumb.jpg"/></a>
+            <h3>A Developmental Approach to Concept Learning</h3>
+            <h4>Liesl Wigand, Monica Nicolescu, Mircea Ncolescu</h4>
+            <p> The ability to learn new concepts is essential for any robot to be successful in real-world applications. This
+                is due to the fact that it is impractical for a robot designer to pre-endow it with all the concepts that it would
+                encounter during its operational lifetime. In this context, it becomes necessary that the robot is able to acquire
+                new concepts, in a real-world context, from cues provided in natural, unconstrained interactions, similar to a
+                human-teaching approach. However, existing approaches on concept learning from visual images and abstract
+                concept learning address this problem in a manner that makes them unsuitable for learning in an embodied,
+                real-world environment. This paper presents a developmental approach to concept learning. The proposed
+                system learns abstract, generic features of objects and associates words from sentences referring to those
+                objects with the features, thus providing a grounding for the meaning of the words. The method thus allows
+                the system to later identify such features in previously unseen images. The paper presents results obtained on
+                data acquired with a Kinect camera and on synthetic images. </p>
+                <a href="/paper2.pdf">pdf</a>
+        </div>
+        <div class="row-fluid" id="textcontent">
+            <a href="images/3-thumb.jpg"><img id="textcontent" style="float:left" src="images/3-thumb.jpg"/></a>
+            <h3>Deep networks for predicting human intent with respect to objects</h3>
+            <h4>Richard Kelley, Liesl Wigand, Brian Hamilton, Katie Browne, Monica Nicolescu, Mircea Ncolescu</h4>
+            <p> Further information later. </p>
+        </div>
+        <div class="row-fluid" id="textcontent">
+            <a href="images/4-thumb.jpg"><img id="textcontent" style="float:left" src="images/4-thumb.jpg"/></a>
+            <h3>Point Clouds and Range Images for Intent Recognition and Human-Robot Interaction</h3>
+            <h4>Richard Kelley, Amol Ambardekar, Liesl Wigand, Monica Nicolescu, Mircea Ncolescu</h4>
+            <p> Further information later. </p>
+        </div>
+	</div>
+	
+</body>

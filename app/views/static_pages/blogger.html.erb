@@ -1,0 +1,37 @@
+<% provide(:title, 'Blog') %>
+<body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <ul class="nav">
+			<li> <%= link_to "Home", static_pages_home_path %> </li>
+			<li> <%= link_to "About", static_pages_help_path %> </li>
+			<li> <%= link_to "Projects", static_pages_exproj_path %> </li>
+			<li> <%= link_to "Resume", static_pages_resume_path %> </li>
+		    <li> <%= link_to "Fun", static_pages_fun_path %> </li>
+		    <li> <%= link_to "Sign up now!", '#', class: "btn btn-primary", style:"color: #3E3535" %> </li>
+	    </ul>
+      </div>
+    </div>
+
+	<section id="intro">
+		<div class="container-fluid">
+			<div class="span9">
+	        <header>
+			    <h2> Possible Blog, Forum, Test Zone </h2>
+		    </header>
+		    <p> This is where I'm playing with features my site doesn't actually need, like users. </p>
+		    </div>
+	    </div>
+	</section>
+
+	<div class="container-fluid" id="content">
+		<!--eqblock-->
+		<div class="span3 backed">
+			<div class="pagination-centered"><a href="#"><img class="bordered" src="images/1-thumb.jpg" alt="robotpic1"  /></a></div>
+			<h3> Title  </h3> 
+			<p> Empty. </p>
+		</div> 
+	</div>
+
+<!-- Free template created by http://freehtml5templates.com -->
+</body>

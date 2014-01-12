@@ -6,8 +6,7 @@
 			<li class="active"> <%= link_to "Home", static_pages_home_path %> </li>
 			<li> <%= link_to "About", static_pages_help_path %> </li>
 			<li> <%= link_to "Projects", static_pages_exproj_path %> </li>
-			<li> <a href="resumepg">Resume</a> </li>
-		    <!--<li><a href=  >Fun</a></li> -->
+			<li> <%= link_to "Resume", static_pages_resume_path %> </li>
 		    <li> <%= link_to "Fun", static_pages_fun_path %> </li>
 	    </ul>
       </div>
@@ -31,28 +30,28 @@
 		<!--eqblock-->
 		<div class="span3 backed">
 			<div class="pagination-centered"><a href="#"><img class="bordered" src="images/2-thumb.jpg" alt=""  /></a></div>
-			<h3><a href="about.html"> About This Site </a></h3> 
+			<h3> <%= link_to "About the Site", static_pages_help_path %>  </h3> 
 			<p> Webpage talk, hosting, full credits, and general information. </p>
 		</div>
 
 		<!--eqblock-->
 		<div class="span3 backed">
 			<div class="pagination-centered"><a href="#"><img class="bordered" src="images/1-thumb.jpg" alt=""  /></a></div>
-			<h3><a href="exproj.html">Exciting Projects</a></h3> 
+			<h3> <%= link_to "Projects", static_pages_exproj_path %> </h3> 
 			<p> Descriptions of several projects I have worked on in the past for school and work. </p> 
 		</div>
 
 		<!--eqblock-->
 		<div class="span3 backed">
 	    	<div class="pagination-centered"><a href="#"><img class="bordered" src="images/6-thumb.jpg" alt=""  /></a></div>
-			<h3><a href="resumepg.html">Resum&eacute;</a></h3> 
-			<p> My own personal advertisement as well as soem links to webpages for projects I have shared in. </p> 
+			<h3> <%= link_to "Resume", static_pages_resume_path %> </h3> 
+			<p> My own personal advertisement as well as some links to webpages for projects I have shared in. </p> 
 		</div>
 
 		<!--eqblock-->
 		<div class="span3 backed">
 			<div class="pagination-centered"><a href="#"><img class="bordered" src="images/3-thumb.jpg" alt=""  /></a></div>
-			<h3><a href="fun.html"> Random Fun Stuff </a></h3> 
+			<h3> <%= link_to "Random Non-Work Stuff", static_pages_fun_path %> </h3> 
 			<p> Comics, Games, and Books that I have either greatly enjoyed or hated. </p>
 		</div>
 	</div>
