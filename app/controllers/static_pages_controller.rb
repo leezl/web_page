@@ -11,6 +11,9 @@ class StaticPagesController < ApplicationController
   def exproj
   end
 
+  def subProjectsErrors
+  end
+
   def blogger
   end
 

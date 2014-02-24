@@ -65,37 +65,6 @@ section {
   margin: 20px;
 }
 
-#content {
-    background: #283142 url("../images/wave617c58.png") repeat;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 0px;
-    margin: 20px;
-    border-radius: 6px;
-}
-
-#contentGallery {
-    background: #283142 url("../images/wave617c58.png") repeat;
-    height: 880px;
-}
-
-#carouselMine {
-    text-align: center
-}
-
-#textcontent {
-    background: #283142 url("../images/asfalt283142Light.png") repeat;
-    -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
-    margin: 5px 5px 5px 5px;
-}
-
-#imagecontent {
-    margin: 10px 10px 10px 10px;
-    max-width: 97%;
-}
-
 audio,
 canvas,
 video {
